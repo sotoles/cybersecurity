@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#teams" class="menu-btn">Explore</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#contact" class="menu-btn">Contacts</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello!</div>
+                <div class="text-2">Let's talk about,</div>
+                <div class="text-3"><span class="typing"></span></div>
+                <a href="#teams">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- teams section start -->
+    <section class="teams" id="teams">
+        <div class="max-width">
+            <h2 class="title">Questions</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <a href="whatif.html">
+                        <img src="images/qweee.jpg">
+                    </a>
+                        <div class="text">What is Cybersecurity?</div>
+                        <p>Click to learn more about Cybersecurity.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="threats.html">
+                        <img src="images/cyber-attacks.jpg">
+                    </a>
+                        <div class="text">Threats in Cybersecurity</div>
+                        <p>Click to learn more about Cybersecurity.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="strategies.html">
+                        <img src="images/encrypted.jpg">
+                    </a>
+                        <div class="text">Cybersecurities Management Strategies</div>
+                        <p>Click to learn more about Cybersecurity.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <a href="reference.html">
+                        <img src="images/reference.jpg" alt="">
+                        </a>
+                        <div class="text">References</div>
+                        <p>Click to see all of the references.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About this website</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img class="Thumb" id="thumbnails" src="images/thumbnail.png">
+                    </div>
+                <img src="images/play.png" class="play-btn" onclick="playVideo('images/final.mp4')">
+            </div>
+        </div>
+<div class="video-player" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+        <source src="images/final.mp4" type="video/mp4">
+    </video>
+    <img src="close.png" class="close-btn" onclick="stopVideo()">
+</div>
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("myVideo");
+function stopVideo(){
+    videoPlayer.style.display = "none";
+}
+function playVideo(file){
+    myVideo.src = file;
+    videoPlayer.style.display = "block";
+}
+</script>
+    </section>
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contacts</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">You can contact me here</div>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Leslie E. Soto</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Brgy. Esmeralda, Balungao, Pangasinan</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">lesliesoto@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <script src="script.js">
+    </script>
+</body>
+</html>
